@@ -87,6 +87,12 @@ ul{
     .sidebar ul li a span{
         display: none;
     }
+    .text-c-mobile{
+        text-align: center;
+    }
+    .block-mobile{
+        display: block;
+    }
 }
 /* Content */
 
@@ -152,7 +158,21 @@ width: 200px;
     width: 35px;
 }
 
-
+/* wrapper */
+.wrapper{
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media (max-width:767px){
+    .wrapper{
+        grid-template-columns: minmax(200px,1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    } 
+}
+/* wrapper */
 
 
 
